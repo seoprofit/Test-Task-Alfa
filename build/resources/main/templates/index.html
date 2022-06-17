@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+</head>
+
+    <body>
+
+<img th:src="${url}">
+
+    <h3> Курс за сегодня: <span th:text="${rateToday}"/></h3>
+    <h3> Курс за вчера: <span th:text="${rateYesterday}"></h3>
+    <h3> Ссылка парсинга GIF:  <span th:text = "${pars_url}"/>  </h3>
+
+    </body>
+
+</html>
